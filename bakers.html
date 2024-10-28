@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakers - Bakery</title>
+    <script src="js/app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Poiret+One&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Tambahkan style ini untuk memastikan gambar tampil secara horizontal dan fleksibel */
+        .bakers__container {
+            display: flex; /* Menggunakan flexbox untuk layout horizontal */
+            justify-content: space-between; /* Menyebar gambar dengan ruang yang sama */
+            flex-wrap: wrap; /* Membolehkan gambar untuk membungkus jika diperlukan */
+            padding: 20px 0; /* Padding vertikal untuk ruang tambahan */
+        }
+
+        .baker {
+            flex: 1; /* Membuat setiap baker menggunakan ruang yang sama */
+            max-width: 18%; /* Maksimal lebar setiap gambar */
+            text-align: center; /* Memusatkan teks di bawah gambar */
+            margin: 10px; /* Memberikan ruang antar gambar */
+            transition: transform 0.2s ease; /* Animasi pada saat hover */
+        }
+
+        .baker img {
+            width: 100%; /* Mengatur gambar untuk mengisi wadah */
+            height: auto; /* Mempertahankan rasio aspek gambar */
+            border-radius: 10px; /* Membuat sudut gambar melengkung */
+            transition: transform 0.2s ease; /* Animasi pada saat hover */
+        }
+
+        /* Efek hover pada gambar */
+        .baker:hover img {
+            transform: scale(1.1); /* Zoom efek saat hover */
+        }
+
+        /* Responsif untuk ukuran layar kecil */
+        @media screen and (max-width: 768px) {
+            .baker {
+                max-width: 45%; /* Gambar akan lebih besar di layar kecil */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <a href="index.html" class="logo">D'Crust Bakery</a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html#reservation" class="nav-link">Reservation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="bakers.html" class="nav-link active">Bakers</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero small-size-hero" id="hero"></section>
+
+    <!-- BAKERS -->
+    <section class="bakers">
+        <div class="container">
+            <div class="global-headline">
+                <h2 class="sub-headline">Our</h2>
+                <h3 class="headline headline-dark">Bakers</h3>
+                <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+            </div>
+            <div class="bakers__container">
+                <div class="baker">
+                    <img src="images/foto bakery rafi.jpeg" alt="baker">
+                    <h5>Rafi</h5>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="baker">
+                    <img src="images/foto bakery nauval.jpeg" alt="baker">
+                    <h5>Nauval</h5>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="baker">
+                    <img src="images/foto bakery nayla.jpg" alt="baker">
+                    <h5>Nayla</h5>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="baker">
+                    <img src="images/foto bakery friza.jpg" alt="baker">
+                    <h5>Friza</h5>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="baker">
+                    <img src="images/foto bakery haikal.jpeg" alt="baker">
+                    <h5>Haikal</h5>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN US SECTION -->
+    <section class="join-us">
+        <div class="container">
+            <div class="row">
+                <div class="image padding-right animate-left">
+                    <img src="images/about-img-1.jpeg" alt="bread">
+                </div>
+                <div class="description animate-right">
+                    <div class="global-headline">
+                        <h2 class="sub-headline">Careers</h2>
+                        <h3 class="headline headline-dark">Join Us</h3>
+                        <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    </div>
+                    <p>Enjoy a delightful selection from artisanal sourdough to rich brioche, all crafted with passion and the finest ingredients. Whether you’re after a quick breakfast or a sweet treat, we have something for everyone. Come in and experience the joy of freshly baked bread—you deserve it!</p>
+                    <a href="index.html" class="btn btn-secondary">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="back-to-top">
+                <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+            </div>
+            <div class="footer__content">
+                <div class="footer__content-about animate-top">
+                    <h4>About Bakery</h4>
+                    <div class="asterisk"><i class="fas fa-asterisk"></i></div>
+                    <p>We’re a bakery in the heart of our community, offering delicious breads, pastries, and desserts made from scratch every day with local ingredients. From flaky croissants to rich cakes, each treat is crafted for great flavor. D'Crust is a cozy spot for friends and families to gather. Enjoy fresh coffee and the wonderful smell of baked goods. We love baking and trying new flavors, so there’s always something exciting to taste. Thank you for being part of our bakery family. We can’t wait to serve you!</p>
+                </div>
+                <div class="footer__content-divider animate-bottom">
+                    <div class="social-media">
+                        <h4>Follow Us</h4>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="newsletter-container">
+                        <h4>Newsletter</h4>
+                        <form action="" class="newsletter-form">
+                            <div class="newsletter-form-box">
+                                <input type="text" class="newsletter-input" placeholder="Your email address...">
+                                <button class="newsletter-btn" type="submit">
+                                    <i class="fas fa-envelope"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

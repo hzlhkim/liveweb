@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bakery</title>
+    <script src="js/app.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Poiret+One&family=Source+Sans+Pro:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+
+ <!-- RESERVATION SECTION -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="reservation__container">
+                <h4>Book Your Table</h4>
+                <form action="#" class="reservation__form">
+                    <select name="persons">
+                        <option>1 Person</option>
+                        <option>2 Person</option>
+                        <option>3 Person</option>
+                        <option>4 Person</option>
+                        <option>5 Person</option>
+                        <option>6 Person</option>
+                        <option>7 Person</option>
+                    </select>
+                    <input type="date" class="reservation__date">
+                    <input type="time" class="reservation__time">
+                    <button class="btn btn-primary submit__reservation">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+      
+        th, td {
+          border: 1px solid #ddd;
+          padding: 10px;
+          text-align: left;
+        }
+      
+        th {
+          background-color: #f0f0f0;
+        }
+      
+        ol, ul {
+          list-style-position: inside;
+          padding: 0;
+          margin: 0;
+        }
+      
+        li {
+          padding: 5px;
+          border-bottom: 1px solid #ccc;
+        }
+      
+        li:last-child {
+          border-bottom: none;
+        }
+      </style>
+    <table border="1">
+        <tr>
+          <th>Reservation 1</th>
+          <th>Reservation 2</th>
+          <th>Reservation 3</th>
+          <th>Reservation 4</th>
+        </tr>
+        <tr>
+          <td>
+            <ol>
+              <li>2 Person</li>
+              <li>3 Person</li>
+              <li>2 Person</li>
+            </ol>
+          </td>
+          <td>
+            <ol>
+              <li>4 Person</li>
+              <li>2 Person</li>
+              <li>1 Person</li>
+            </ol>
+          </td>
+          <td>
+            <ul>
+              <li>2 Person</li>
+              <li>4 Person</li>
+              <li>2 Person</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>3 Person</li>
+              <li>1 Person</li>
+              <li>2 Person</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+</body>
+</html>

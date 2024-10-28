@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=" UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form - D'Crust Bakery</title>
+  <script src="js/app.js" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin&family=Herr+Von+Muellerhoff&family=Poiret+One&family=Source+Sans+Pro:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+  <frameset rows="23%, *">
+    <frame src="index copy.html" name="index" frameborder="0" scrolling="no" noresize>
+    <frame src="formbakery.html" name="form" frameborder="0" scrolling="yes" noresize>
+  </frameset>
+
+
+  <br><br>
+    <form>
+      <fieldset>
+        <legend>Form - D'Crust Bakery</legend>
+        <br>
+        <h2>Full Name :</h2> <input type="text" ><br><br>
+        <h2>Student ID :</h2> <input type="text" ><br><br>
+        
+        <h2>Age :</h2> <input type="number"><br><br>
+        <h2>Password :</h2> <input type="password"> <br><br>
+        <h2>Male</h2> <input type="radio" name="File" id="Your File"> <br><br>
+        <h2>Female</h2> <input type="radio" name="File" id="Your File"><br><br>
+        <h2>How much your interest :</h2> <input type="range" name="Date" id="My Date"> <br><br>
+
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Pick every food that you like down below</legend>
+        <input type="checkbox" id="topping1" name="topping" value="Peanut"> <br> <h2>Bread</h2>
+        <input type="checkbox" id="topping2" name="topping" value="Strawberry"> <br><h2>Croissant</h2>
+        <input type="checkbox" id="topping2" name="topping" value="Strawberry"><h2>Cakes</h2>
+    
+        <br><br>
+
+        <label for="options"><h2>Choose one of your favorite food in our bakery:</h2></label>
+    <select id="options" name="options" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="option1">Bread</option>
+        <option value="option2">Croissant</option>
+        <option value="option3">Cake</option>
+        <option value="option4">Pizza</option>
+    </select>
+  </fieldset>
+    <br><br>
+    <fieldset>
+    <label for="textarea"><h2>Leave a comment for our Bakery :</h2></label> <br>
+        <textarea name="textarea" id="textarea" rows="6" cols="50"></textarea>
+      
+<br><br>
+    </form>
+
+    <a href="index copy.html" target="_blank" style="font-weight: bold; font-size: 18px; background-color: #964B00; padding: 10px; border-radius: 5px; color: #FFC080;
+     text-decoration: none;">Submit</a>
+</fieldset>
+  
+</body>
+</html>
